@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+case "$1" in
+	install|configure)
+		for file in /usr/share/canaima-llaves/*.asc
+		do
+			apt-key add $file
+		done
+	;;
+esac
+
+
