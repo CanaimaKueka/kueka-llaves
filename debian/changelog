@@ -3,5 +3,6 @@ canaima-llaves (3.0+0) unstable; urgency=low
   * Reconstrucción del paquete canaima-llaves de acuerdo con las nuevas políticas de desarrollo de Canaima GNU/Linux
   * [ebc4ea9] Agregando vcs-git a debian/control
   * [f316d11] Agregando Makefile y otros archivos de paquetes fuente
+  * [72ba1db] Corrigiendo errores reportados por lintian
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 18 Nov 2010 18:31:59 -0430
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 19 Nov 2010 16:59:22 -0430
