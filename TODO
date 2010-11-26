@@ -8,4 +8,8 @@ GRANDES MODIFICACIONES
 
 PEQUEÑAS MODIFICACIONES
 
-* 
+* Now running lintian...
+W: canaima-llaves source: non-native-package-with-native-version
+E: canaima-llaves: copyright-should-refer-to-common-license-file-for-gpl
+W: canaima-llaves: debian-changelog-line-too-long line 1
+

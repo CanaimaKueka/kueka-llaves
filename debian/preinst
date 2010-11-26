@@ -2,8 +2,8 @@
 #
 # ==============================================================================
 # PAQUETE: canaima-llaves
-# ARCHIVO: postinst
-# DESCRIPCIÓN: Configura el sistema despues la instalación del paquete.
+# ARCHIVO: preinst
+# DESCRIPCIÓN: Configura el sistema antes de la instalación del paquete.
 # COPYRIGHT:
 #  (C) 2010 Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>
 #  (C) 2010 Diego Alberto Aguilera Zambrano <daguilera85@gmail.com>
@@ -15,28 +15,17 @@
 # Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los
 # términos de la Licencia Pública General de GNU (versión 3).
 
-PKG="canaima-llaves"
-
 case ${1} in
 
-	configure)
-
-		for file in /usr/share/canaima-llaves/*.asc
-		do
-
-			apt-key add ${file}
-
-		done
+	install|upgrade)
 	;;
 
-	abort-upgrade|abort-remove|abort-deconfigure)
+	abort-upgrade)
 	;;
 
 	*)
-
-		echo "postinst no reconoce el argumento '"${1}"'" >&2
+		echo "preinst no reconoce el argumento '"${1}"'" >&2
 		exit 1
-
 	;;
 
 esac
