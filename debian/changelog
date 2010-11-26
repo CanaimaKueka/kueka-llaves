@@ -1,3 +1,9 @@
+canaima-llaves (3.0+1) unstable; urgency=low
+
+  * [8fdf6e0] Agregando scripts del mantenedor
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 26 Nov 2010 17:41:40 -0430
+
 canaima-llaves (3.0+0) unstable; urgency=low
 
   * Reconstrucción del paquete canaima-llaves de acuerdo con las nuevas políticas de desarrollo de Canaima GNU/Linux
