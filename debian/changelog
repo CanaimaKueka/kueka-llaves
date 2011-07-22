@@ -1,8 +1,10 @@
 canaima-llaves (3.0+1) unstable; urgency=low
 
   * [8fdf6e0] Agregando scripts del mantenedor
+  * [36baf7b] [ canaima-desarrollador ] Los siguientes archivos han sido
+    modificados/añadidos: control
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 26 Nov 2010 17:41:40 -0430
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 21 Jul 2011 22:51:09 -0430
 
 canaima-llaves (3.0+0) unstable; urgency=low
 
