@@ -1,3 +1,10 @@
+canaima-llaves (3.0+2) unstable; urgency=low
+
+  * [1d68004] Agregando comprobación de scripts del mantenedor en el
+    Makefile
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Thu, 21 Jul 2011 23:27:47 -0430
+
 canaima-llaves (3.0+1) unstable; urgency=low
 
   * [8fdf6e0] Agregando scripts del mantenedor
