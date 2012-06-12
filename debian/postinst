@@ -36,7 +36,7 @@ case ${1} in
 		for KEY in ${ACTIVE}; do
 			KEYID="$( echo ${KEY} | sed 's|/usr/share/keyrings/CANAIMA-ACTIVE-||g;s|.gpg||g' )"
 			if [ $( apt-key list | grep -c "${KEYID}" ) -eq 0 ]; then
-				echo "Añadiendo llave '${ACTKEY}'"
+				echo "Añadiendo llave '${KEYID}'"
 				apt-key add ${KEY} 1>/dev/null 2>&1
 			fi
 		done
