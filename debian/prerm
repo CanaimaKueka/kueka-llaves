@@ -29,8 +29,10 @@ EXITO() {
 case ${1} in
 
 	remove|upgrade|deconfigure)
+		ACTIVE="$( ls -1 /usr/share/keyrings/ | grep "CANAIMA-ACTIVE-" )"
+
 		ADVERTENCIA "Removiendo llaves del repositorio oficial de Canaima"
-		for KEY in /usr/share/keyrings/CANAIMA-ACTIVE-*.gpg; do
+		for KEY in ${ACTIVE}; do
 			KEYID="$( echo ${KEY} | sed 's|/usr/share/keyrings/CANAIMA-ACTIVE-||g;s|.gpg||g' )"
 			if [ $( apt-key list | grep -c "${KEYID}" ) -ge 1 ]; then
 				echo "Removiendo llave '${KEYID}'"

@@ -29,16 +29,20 @@ EXITO() {
 case ${1} in
 
 	configure)
+		ACTIVE="$( ls -1 /usr/share/keyrings/ | grep "CANAIMA-ACTIVE-" )"
+		DEPRECATED="$( ls -1 /usr/share/keyrings/ | grep "CANAIMA-DEPRECATED-" )"
+
 		ADVERTENCIA "Añadiendo llaves del repositorio oficial de Canaima"
-		for KEY in /usr/share/keyrings/CANAIMA-ACTIVE-*.gpg; do
+		for KEY in ${ACTIVE}; do
 			KEYID="$( echo ${KEY} | sed 's|/usr/share/keyrings/CANAIMA-ACTIVE-||g;s|.gpg||g' )"
 			if [ $( apt-key list | grep -c "${KEYID}" ) -eq 0 ]; then
-				echo "Añadiendo llave '${KEYID}'"
+				echo "Añadiendo llave '${ACTKEY}'"
 				apt-key add ${KEY} 1>/dev/null 2>&1
 			fi
 		done
+
 		ADVERTENCIA "Removiendo llaves obsoletas del repositorio oficial de Canaima"
-		for KEY in /usr/share/keyrings/CANAIMA-DEPRECATED-*.gpg; do
+		for KEY in ${DEPRECATED}; do
 			KEYID="$( echo ${KEY} | sed 's|/usr/share/keyrings/CANAIMA-DEPRECATED-||g;s|.gpg||g' )"
 			if [ $( apt-key list | grep -c "${KEYID}" ) -ge 1 ]; then
 				echo "Removiendo llave '${KEYID}'"
