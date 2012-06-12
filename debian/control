@@ -12,6 +12,7 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-llaves/trees/master
 Package: canaima-llaves
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Llaves de los repositorios de la Metadistribución Canaima
+Pre-Depends: gnupg, apt
+Description: Llaves de los repositorios de la Metadistribución Canaima GNU/Linux
  Este paquete provee las llaves de los repositorios
  de Canaima GNU/Linux.
