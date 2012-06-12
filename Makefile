@@ -2,6 +2,10 @@
 
 SHELL := sh -e
 
+all: build
+
+build:
+
 install:
 
 	mkdir -p $(DESTDIR)/usr/share/keyrings/
