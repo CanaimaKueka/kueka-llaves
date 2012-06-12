@@ -1,3 +1,9 @@
+canaima-llaves (3.1-7) unstable; urgency=low
+
+  * [8928de4] Corrigiendo error en el postinstall.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 12 Jun 2012 16:18:44 -0430
+
 canaima-llaves (3.1-6) unstable; urgency=low
 
   * [e0a0447] Corrigiendo variable en el postinstall.
