@@ -1,3 +1,9 @@
+canaima-llaves (3.1-6) unstable; urgency=low
+
+  * [e0a0447] Corrigiendo variable en el postinstall.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 12 Jun 2012 15:24:51 -0430
+
 canaima-llaves (3.1-5) unstable; urgency=low
 
   * [c18fc0d] Cambiando esquema de nombres.
