@@ -1,9 +1,20 @@
 canaima-llaves (3.1-4) unstable; urgency=low
 
+  [ Randy Ortega ]
   * [716e068] "Modificando el uploader del archivo control"
   * [02ba9d9] revisando algun warning con el lintian
 
- -- Randy Ortega <ortega571@gmail.com>  Mon, 28 Nov 2011 11:23:04 -0430
+  [ Luis Alejandro Martínez Faneyth ]
+  * [2edb791] Añadiendo llave pública del nuevo repositorio
+    "paquetes.canaima.softwarelibre.gob.ve". Nuevo esquema de nombres
+    para las llaves gpg: CANAIMA-[KEYID]-[STATUS].gpg  KEYID:
+    Identificador de la llave.  STATUS: ACTIVE o DEPRECATED según sea el
+    caso. Removiendo scripts de mantenedor innecesarios. Mejorando
+    scripts para añadir o remover una llave. Añadiendo Pre-Depends a
+    gnupg y apt.
+  * [8b0d8e5] Cambiando el campo de mantenedor.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 12 Jun 2012 13:49:06 -0430
 
 canaima-llaves (3.1-3) unstable; urgency=low
 
