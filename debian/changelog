@@ -1,3 +1,9 @@
+canaima-llaves (3.1-5) unstable; urgency=low
+
+  * [c18fc0d] Cambiando esquema de nombres.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 12 Jun 2012 14:26:30 -0430
+
 canaima-llaves (3.1-4) unstable; urgency=low
 
   [ Randy Ortega ]
