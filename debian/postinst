@@ -29,8 +29,8 @@ EXITO() {
 case ${1} in
 
 	configure)
-		ACTIVE="$( ls -1 /usr/share/keyrings/ | grep "CANAIMA-ACTIVE-" )"
-		DEPRECATED="$( ls -1 /usr/share/keyrings/ | grep "CANAIMA-DEPRECATED-" )"
+		ACTIVE="$( ls -1 /usr/share/keyrings/* | grep "CANAIMA-ACTIVE-" )"
+		DEPRECATED="$( ls -1 /usr/share/keyrings/* | grep "CANAIMA-DEPRECATED-" )"
 
 		ADVERTENCIA "Añadiendo llaves del repositorio oficial de Canaima"
 		for KEY in ${ACTIVE}; do
