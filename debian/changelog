@@ -1,3 +1,9 @@
+canaima-llaves (4.0+1) unstable; urgency=low
+
+  * [c34481b] Cambiando a formato nativo.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Tue, 07 May 2013 02:12:48 -0430
+
 canaima-llaves (3.1-7) unstable; urgency=low
 
   * [8928de4] Corrigiendo error en el postinstall.
