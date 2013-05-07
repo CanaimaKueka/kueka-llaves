@@ -8,8 +8,8 @@ build:
 
 install:
 
-	mkdir -p $(DESTDIR)/usr/share/keyrings/
-	cp -r keys/*.gpg $(DESTDIR)/usr/share/keyrings/
+	@mkdir -p $(DESTDIR)/usr/share/keyrings/
+	@cp -r keys/*.gpg $(DESTDIR)/usr/share/keyrings/
 
 uninstall:
 
